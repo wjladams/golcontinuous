@@ -65,15 +65,15 @@ function upperBound(val) {
 }
 
 function upperBoundPrime(val) {
-  return 3.5;
+  return 3.5+Math.pow(val, 2);
 }
 
 function lowerBound(val) {
-  return 3-val*1.25;
+  return 3-Math.pow(val, 0.5)*1.;
 }
 
 function lowerBoundPrime(val) {
-  return 2.75-val*1.55;
+  return 2.25-Math.pow(val, 0.5)*1.;
 }
 
 function isValidRow(row) {
