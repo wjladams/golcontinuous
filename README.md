@@ -1,3 +1,3 @@
 # Continuous Game of Life Example
 
-* First idea in [main.html](main.html)
+* First idea in [jsgolcont/main.html](jsgolcont/main.html)
