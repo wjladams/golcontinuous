@@ -59,21 +59,24 @@ function randomMatrix(nrows, ncols) {
   }
   return rval;
 }
+alpha = 1;
+palpha = 3;
+alphap = 1;
 
 function upperBound(val) {
-  return 3;
+  return 3+alpha*Math.pow(val, palpha);
 }
 
 function upperBoundPrime(val) {
-  return 3+Math.pow(val, 2);
+  return 4+alphap*val;
 }
 
 function lowerBound(val) {
-  return 3-Math.pow(val, 0.5)*1.;
+  return 3-alpha*Math.pow(val, palpha);
 }
 
 function lowerBoundPrime(val) {
-  return 2.1-Math.pow(val, 0.5)*1.25;
+  return 2 - alphap*val;
 }
 
 function isValidRow(row) {
